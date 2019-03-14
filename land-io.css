@@ -312,6 +312,7 @@ body {
 
 .form {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
@@ -320,6 +321,53 @@ body {
     position: relative;
     /* flex: 1; */
     flex-basis: 23%;
+}
+
+.form .form__group:last-child {
+    flex-basis: 50%;
+    margin-top: 3rem;
+}
+
+.form .form__group:last-child input{
+    display: none;
+}
+
+.form .form__group:last-child input:checked ~ .form__agree-label > .form__agree-checkbox::after {
+    display: block;
+}
+
+.form .form__group .form__agree-label {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: rgba(66, 71, 83, 0.8);
+    position: relative;
+    padding-left: 3rem;
+}
+
+.form .form__group .form__agree-checkbox {
+    height: 2rem;
+    width: 2rem;
+    background-color: #FFFFFF;
+    border: 1px solid #E0E0E5;
+    border-radius: 1px;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: -0.2rem;
+    cursor: pointer;
+}
+
+.form .form__group .form__agree-checkbox::after {
+    content: "";
+    display: none;
+    position: absolute;
+    left: 6px;
+    top: 2px;
+    width: 7px;
+    height: 11px;
+    border: solid gray;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
 }
 
 .form .form__input {
