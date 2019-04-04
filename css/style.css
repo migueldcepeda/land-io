@@ -238,6 +238,29 @@ body {
   .row .col-3-of-4 {
     width: calc(3 * ((100% - 3 * 6rem) / 4) + (2 * 6rem)); }
 
+.footer {
+  background-color: #312F38;
+  color: #FFFFFF;
+  padding: 8rem 0; }
+  .footer__content {
+    display: flex;
+    align-items: center; }
+  .footer__logo {
+    height: 2.6rem;
+    margin-right: 2rem; }
+  .footer__copyright {
+    display: flex;
+    align-items: center;
+    margin-right: auto; }
+  .footer__text {
+    font-size: 1.3rem; }
+  .footer__list {
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: 500; }
+    .footer__list .footer__nav-item:not(:last-child) {
+      margin-right: 3.4rem; }
+
 .header {
   height: 95vh;
   background-image: linear-gradient(211.79deg, rgba(43, 139, 227, 0.8) 6.12%, rgba(102, 63, 181, 0.8) 90.47%), url(../img/biker.png);
