@@ -144,7 +144,7 @@ body {
         211.79deg,
         rgba(43, 139, 227, 0.8) 6.12%,
         rgba(102, 63, 181, 0.8) 90.47%),
-    url(./img/biker.png);
+    url(../img/biker.png);
     background-size: cover;
     background-position: center;
     position: relative;

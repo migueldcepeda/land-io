@@ -1,0 +1,45 @@
+.header {
+    height: 95vh;
+    background-image: linear-gradient(
+        211.79deg,
+        rgba(43, 139, 227, 0.8) 6.12%,
+        rgba(102, 63, 181, 0.8) 90.47%),
+    url(../img/biker.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+    &__text-box {
+        position: absolute;
+        text-align: center;
+        top: 25%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+    }
+}
+
+/* --- NAVIGATION --- */
+.navigation {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #FFFFFF;
+    padding-top: 3rem;
+
+    &__logo {
+        height: 2.6rem;
+    }
+
+    &__nav {
+        display: flex;
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+        font-weight: 500;
+    }
+
+    &__nav li {
+        margin: 0 2rem;
+    }
+}

@@ -1,0 +1,126 @@
+/* --- BUTTONS ---*/
+.btn {
+    &,
+    &:visited,
+    &:link {
+        display: inline-block;
+        border-radius: 4rem;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 1.4rem 3.6rem;
+        font-size: 1.3rem;
+        font-weight: 500;
+        letter-spacing: 1px;
+        transition: all .2s;
+    }
+
+    &:active,
+    &:focus {
+        outline: none;
+        transform: translateY(3px);
+        /* box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); */
+    }
+
+    &--clear {
+        border: 2px solid #FFFFFF;
+        background-color: transparent;
+        color: #FFFFFF;
+    }
+
+    &--purple-inverted {
+        border: 2px solid rgba(108, 89, 180, 0.75);
+        color: rgba(108, 89, 180, 0.75);
+        margin: 4rem 0;
+    }
+
+    &--purple {
+        /* border: 2px solid rgba(108, 89, 180, 0.75); */
+        background-color: rgba(108, 89, 180, 0.75);
+        color: #FFF;
+    }
+}
+
+.btn__text,
+.btn__image {
+    transform: translateY(-2px); /* small hack */
+    display: inline-block;
+
+    .diamond {
+        height: 2rem;
+        margin-right: 1.3rem;
+        transform: translateY(5px);
+        line-height: 0;
+    }
+}
+
+/* --- PRICE CARD --- */
+.pricing-options {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    /* display: flex; */
+    flex-basis: 25%;
+    height: auto;
+    font-size: 1.6rem;
+    background: #FFFFFF;
+    border: 1px solid #ECEFF3;
+    border-radius: 4px;
+
+    &__heading {
+        display: inline-block;
+        font-size: 1.6rem;
+        font-weight: 300;
+        background-color: #ECEFF3;
+        width: 100%;
+        text-align: center;
+        padding: 1.8rem;
+        text-transform: uppercase;
+    }
+
+    &__intro {
+        padding-top: 2.5rem;
+    }
+
+    .dollar-sign {
+        display: inline-block;
+        font-size: 2.6rem;
+        font-weight: 500;
+    }
+
+    &__price-box {
+        padding-bottom: 2rem;
+        border-bottom: 1px solid #EDEDEF;
+        margin-bottom: 2rem;
+    }
+
+    .price-only {
+        display: inline-block;
+        font-weight: bold;
+        font-size: 5.6rem;
+        margin-top: 2rem;
+        margin-right: 6rem;
+        line-height: 0;
+    }
+
+    .monthly {
+        display: block;
+        line-height: 1.2;
+        margin-top: 2rem;
+        margin-left: 8rem;
+    }
+
+    &__details li {
+        padding: 1rem;
+    }
+
+    &__details li:not(:last-child) {
+        border-bottom: 1px solid #EDEDEF;
+    }
+}
+
+[class^="card__"]:not(:first-child) {
+    width: 80%;
+    margin: 0 auto;
+}
